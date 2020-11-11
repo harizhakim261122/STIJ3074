@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Form</title>
+</head>
+<body>
+    <form action="Registration_form.php"
+    onsubmit="return validateForm()" method="post"></form>
+    <table>
+        <tr>
+            <td>Name :</td>
+             <td><input type="text" required></td>
+        </tr>
+         <tr>
+            <td>E-mail :</td>
+             <td><input type="email"
+                 pattern=" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></td>
+        </tr>
+        <tr>
+            <td>Password :</td>
+            <td><input type="password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></td>
+        </tr>
+        <tr>
+            <td>Confirm password :</td>
+            <td><input type="password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></td>
+        </tr>
+        <tr>
+            <td>Phone number :</td>
+            <td><input type="phone"
+                maxlength="10" pattern="\d{10}" required></td>
+        </tr>
+        <tr>
+            <td>Address :</td>
+            <td><input type="adress" required></td>
+        </tr>
+        <tr>
+            <td><input type="submit" value="Submit"></td>
+        </tr>
+        </table>
+    </form>
+    
+</body>
+</html>
