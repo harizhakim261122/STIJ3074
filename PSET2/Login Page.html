@@ -1,0 +1,26 @@
+<!DOCTYPE html>    
+<html>    
+<head>    
+    <title>Login Form</title>    
+</head>    
+<body>    
+    <h2>Login Page</h2><br>    
+    <div class="login">    
+    <form id="login" method="get" action="login.php">
+        <table>
+            <td><label for="email"><b>Username :</b></label></td>
+            <td><input id="email" type="email" name="email" placeholder="E-mail"
+                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></td>
+            <tr>
+            <td><label for="password"><b>Password :</b></label></td>
+            <td><input id="password" type="password" name="password" placeholder="Password"
+                pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></td>
+            <tr>
+            <tr>
+            <td><input type="submit" value="Log In"></td>
+        </table>
+    </form>     
+</div> 
+<a href="registration2.0.html">Click here to register.</a>
+</body>    
+</html> 

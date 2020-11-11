@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registeration Form</title>
+</head>
+<body>
+    <h2>Registration Form</h2><br>  
+    <form action="insert.php" method="POST">
+    <table>
+        <td><label for="name">Name :</label></td>
+        <td><input id="name" type="text" name="name" required>
+    <tr>
+        <td><label for="email">E-Mail :</label></td>
+        <td><input id="email" type="email" name="email"
+            pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required></td>
+    </tr>
+    <tr>
+        <td><label for="password">Password :</label></td>
+        <td><input id="password" type="password" name="password"
+            pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" required></td>
+    </tr>
+    <tr>
+        <td><label for="confirmPassword">Re-enter Password :</label></td>
+        <td><input id="confirmPassword" type="password" name="confirmPassword" required></td>
+    </tr>
+    <tr>
+        <td><label for="phoneNumber">Phone Number :</label></td>
+        <td><input id="phoneNumber" type="text" name="phoneNumber"
+            maxlength="10" pattern="\d{10}" required></td>
+        </tr>
+    <tr>
+        <td><label for="address">Address :</label></td>
+        <td><input id="address" type="text" name="address" required>
+    <tr>
+    <tr>
+        <td><input type="submit" value="Submit"></td>
+    </tr>
+    </table>
+    </form>
+    
+</body>
+</html>
