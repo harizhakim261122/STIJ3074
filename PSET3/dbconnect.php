@@ -1,22 +1,30 @@
 <?php
-// //get data first
-// $foodname = $GET['foodname'];
-// $price = $GET['price']; 
-// $quantity = $_GET['quantity'];
-// $calorie = $_GET['calorie'];
 
-//connect to db
+//get data
+$foodname = $_GET['foodname'];
+$price = $_GET['price'];
+$quantity = $_GET['quantity'];
+$calories = $_GET['calories'];
+
+//connect to database
 $servername = "localhost";
 $username = "root";
 $password = "";
 $dbname = "pset3";
 
-// Create connection
-$dbname = new mysqli($servername, $username, $password, $pset3);
-
-// Check connection
-if ($conn->connect_error) {
-  die("Connection failed: " . $conn->connect_error);
+try {
+  $conn = new PDO("mysql:host=$servername;dbname=$dbname", $username, 
+  $password);
+  // set the PDO error mode to exception
+  $conn->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+  $sql = "INSERT INTO food_menu (foodname, price, quantity, calories)
+  VALUES ('$foodname', '$price', '$quantity', $calories)";
+  // use exec() because no results are returned
+  $conn->exec($sql);
+  echo "New record created successfully";
+} catch(PDOException $e) {
+  echo $sql . "<br>" . $e->getMessage();
 }
-echo "Connected successfully";
+
+$conn = null;
 ?>
