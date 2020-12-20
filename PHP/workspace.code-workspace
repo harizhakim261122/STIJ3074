@@ -1,7 +1,15 @@
 {
     "folders": [
         {
+            "name": "bookdepo",
+            "path": "..\\..\\..\\..\\..\\..\\xampp\\htdocs\\bookdepo"
+        },
+        {
+            "name": "PSET3",
             "path": "..\\..\\..\\..\\..\\..\\xampp\\htdocs\\STIJ3074\\PSET3"
         }
-    ]
+    ],
+    "settings": {
+        "liveServer.settings.multiRootWorkspaceName": "PSET3"
+    }
 }
