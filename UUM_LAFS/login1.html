@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- mobile metas -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+    <!-- site metas -->
+    <title>LAFS Log In</title>
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- style css -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Responsive-->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- fevicon -->
+    <link rel="icon" href="images/fevicon.png" type="image/gif" />
+    <!-- Scrollbar Custom CSS -->
+    <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+    <!-- Tweaks for older IEs-->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->\
+    <!-- Icons font CSS-->
+    <link href="vendor/mdi-font/css/material-design-iconic-font.min.css" rel="stylesheet" media="all">
+    <link href="vendor/font-awesome-4.7/css/font-awesome.min.css" rel="stylesheet" media="all">
+    <!-- Font special for pages-->
+    <link href="https://fonts.googleapis.com/css?family=Poppins:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+
+    <!-- Vendor CSS-->
+    <link href="vendor/select2/select2.min.css" rel="stylesheet" media="all">
+    <link href="vendor/datepicker/daterangepicker.css" rel="stylesheet" media="all">
+
+    <!-- Main CSS-->
+    <link href="css/main.css" rel="stylesheet" media="all">
+
+<style>
+  /* Create three unequal columns that floats next to each other */
+.column {
+  float: left;
+  padding: 80px;
+}
+
+/* Left and right column */
+.column.side {
+  width: 30%;
+}
+
+/* Middle column */
+.column.middle {
+  width: 50%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column.side, .column.middle {
+    width: 100%;
+  }
+}
+
+body {
+      background-color: #808080
+    ;
+    }
+</style>
+
+</head>
+<!-- body -->
+
+<body class="main-layout">
+    <!-- loader  -->
+    <div class="loader_bg">
+        <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+    </div>
+    <!-- end loader -->
+    <!-- header -->
+    <header>
+        <!-- header inner -->
+        <div class="header">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-3 col logo_section">
+                        <div class="full">
+                            <div class="center-desk">
+                                <div class="logo"> <a href="index.html"><img src="images/logo.png" alt="#"></a> </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                        <div class="menu-area">
+                            <div class="limit-box">
+                                <nav class="main-menu">
+                                    <ul class="menu-area-main">
+                                        <li class="active"> <a href="mainpage.html">Home</a> </li>
+                                        <li> <a href="register.html">Register</a> </li>
+                                        <li> <a href="login.html">Login</a> </li>
+                                    </ul>
+                                </nav>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end header inner -->
+    </header>
+    <!-- end header -->
+
+    <div class="page-wrapper p-t-130 p-b-100 font-poppins">
+        <div class="wrapper wrapper--w680">
+            <div class="card card-4">
+                <div class="card-body">
+                    <h2 class="title">LAFS Log In Form</h2>
+                    <form method="POST">
+                        <div class="row row-space">
+                            <div class="col-2">
+                                <div class="input-group">
+                                    <label class="label">Staff Username</label>
+                                    <input class="input--style-4" type="text" name="username" required>
+                                </div>
+                            <div class="row row-space">
+                                <div class="col-2">
+                                    <div class="input-group">
+                                        <label class="label">Password</label>
+                                        <input class="input--style-4" type="password" name="staffPassword" required>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="p-t-15">
+                                <button class="btn btn--radius-2 btn--blue" type="submit">Submit</button></b>
+                                <p align="center">New User? <a href="register.html">Register</a></p>  
+                            </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer -->
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12">
+                        <div class="mainpage">
+                            <h3>Contact<strong class="coa"> </strong></h3>
+                        </div>
+
+                    </div>
+
+
+                </div>
+                <div class="row pdn-top-30">
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                        <ul class="location_icon">
+                            <li> <img src="icon/location.png"> <span>UUM Security Department<br>Universiti Utara Malaysia</span></li>
+
+
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                        <ul class="location_icon">
+                            <li> <img src="icon/tellephone.png"><span>+604-928 3333<br>+604-928 2424</span></li>
+                        </ul>
+                    </div>
+                    <div class="col-xl-3 col-lg-3 col-md-3 col-sm-12">
+                        <ul class="location_icon">
+                            <li> <img src="icon/email.png"><span>security@uum.edu.my<br>servicedesk@uum.edu.my</span></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="container">
+                <p>UUM INFORMATION TECHNOLOGY (UUMIT)</p>
+            </div>
+        </div>
+    </footer>
+    <!-- end footer -->
+    <!-- Javascript files-->
+    <script src="js/jquery.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-3.0.0.min.js"></script>
+    <script src="js/plugin.js"></script>
+
+    <!-- sidebar -->
+    <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+    <script src="js/custom.js"></script>
+
+    <!-- Jquery JS-->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <!-- Vendor JS-->
+    <script src="vendor/select2/select2.min.js"></script>
+    <script src="vendor/datepicker/moment.min.js"></script>
+    <script src="vendor/datepicker/daterangepicker.js"></script>
+
+    <!-- Main JS-->
+    <script src="js/global.js"></script>
+</body>
+
+</html>
